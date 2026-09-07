@@ -1,0 +1,6 @@
+export type TaskStatus = 'pending' | 'in_progress' | 'completed' | 'cancelled';
+export type TaskPriority = 'low' | 'medium' | 'high';
+export interface PublicTask { id: number; title: string; description: string | null; assignee: { id: number; firstName: string; lastName: string; email: string; avatar: string | null }; company: { id: number; name: string } | null; contact: { id: number; firstName: string; lastName: string } | null; lead: { id: number } | null; dueDate: string | null; priority: TaskPriority; status: TaskStatus; createdAt: Date; updatedAt: Date }
+export interface TaskInput { title?: string; description?: string | null; assignedTo?: number; relatedCompany?: number | null; relatedContact?: number | null; relatedLead?: number | null; dueDate?: string | null; priority?: TaskPriority; status?: TaskStatus }
+export interface TaskListQuery { page: number; limit: number; search?: string; status?: TaskStatus; priority?: TaskPriority; assignee?: number; dueDate?: string; entityType?: 'company' | 'contact' | 'lead'; entityId?: number; sortBy: string; order: 'asc' | 'desc' }
+export interface PaginatedTasks { items: PublicTask[]; total: number; page: number; limit: number; totalPages: number }

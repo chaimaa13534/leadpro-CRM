@@ -1,0 +1,62 @@
+src/features/contacts/components/ContactFormModal.tsx(62,52): error TS2345: Argument of type '() => { firstName: string; lastName: string; email: string; phone: string; position: string; companyId: string | number; ownerId: string | number; notes: string; }' is not assignable to parameter of type '() => { firstName: string; lastName: string; companyId: number; ownerId: number; email?: string | undefined; phone?: string | undefined; position?: string | undefined; notes?: string | undefined; }'.
+  Call signature return types '{ firstName: string; lastName: string; email: string; phone: string; position: string; companyId: string | number; ownerId: string | number; notes: string; }' and '{ firstName: string; lastName: string; companyId: number; ownerId: number; email?: string | undefined; phone?: string | undefined; position?: string | undefined; notes?: string | undefined; }' are incompatible.
+    The types of 'companyId' are incompatible between these types.
+      Type 'string | number' is not assignable to type 'number'.
+        Type 'string' is not assignable to type 'number'.
+src/features/dashboard/components/RecentActivity.tsx(14,7): error TS2740: Type '{ lead_created: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>; contact_updated: ForwardRefExoticComponent<...>; opportunity_won: ForwardRefExoticComponent<...>; meeting_completed: ForwardRefExoticComponent<...>; }' is missing the following properties from type 'Record<ActivityType, ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>>': lead_updated, contact_created, company_created, opportunity_created, and 20 more.
+src/features/settings/components/NotificationPreferences.tsx(130,13): error TS2322: Type 'Element' is not assignable to type 'string'.
+src/features/settings/components/PasswordForm.tsx(133,30): error TS2304: Cannot find name 'cn'.
+src/features/settings/components/PasswordForm.tsx(139,32): error TS2304: Cannot find name 'cn'.
+src/features/settings/components/TwoFactorSettings.tsx(95,21): error TS2322: Type 'Element' is not assignable to type 'string'.
+src/features/settings/components/TwoFactorSettings.tsx(107,21): error TS2322: Type 'Element' is not assignable to type 'string'.
+src/features/settings/pages/AccountSettingsPage.tsx(80,9): error TS2322: Type '{ title: string; description: string; onBack: () => void | Promise<void>; }' is not assignable to type 'IntrinsicAttributes & SettingsHeaderProps'.
+  Property 'onBack' does not exist on type 'IntrinsicAttributes & SettingsHeaderProps'.
+src/features/settings/pages/AccountSettingsPage.tsx(91,17): error TS2322: Type '{ children: Element; title: string; description: string; icon: Element; }' is not assignable to type 'IntrinsicAttributes & SettingsRowProps'.
+  Property 'icon' does not exist on type 'IntrinsicAttributes & SettingsRowProps'.
+src/features/settings/pages/AccountSettingsPage.tsx(100,17): error TS2322: Type '{ children: Element; title: string; description: string; icon: Element; }' is not assignable to type 'IntrinsicAttributes & SettingsRowProps'.
+  Property 'icon' does not exist on type 'IntrinsicAttributes & SettingsRowProps'.
+src/features/settings/pages/AccountSettingsPage.tsx(118,17): error TS2322: Type '{ children: Element; title: string; description: string; icon: Element; }' is not assignable to type 'IntrinsicAttributes & SettingsRowProps'.
+  Property 'icon' does not exist on type 'IntrinsicAttributes & SettingsRowProps'.
+src/features/settings/pages/AccountSettingsPage.tsx(122,34): error TS2339: Property 'username' does not exist on type 'UserProfile'.
+src/features/settings/pages/AccountSettingsPage.tsx(136,17): error TS2322: Type '{ children: Element; title: string; description: string; icon: Element; }' is not assignable to type 'IntrinsicAttributes & SettingsRowProps'.
+  Property 'icon' does not exist on type 'IntrinsicAttributes & SettingsRowProps'.
+src/features/settings/pages/AccountSettingsPage.tsx(145,17): error TS2322: Type '{ children: Element; title: string; description: string; icon: Element; }' is not assignable to type 'IntrinsicAttributes & SettingsRowProps'.
+  Property 'icon' does not exist on type 'IntrinsicAttributes & SettingsRowProps'.
+src/features/settings/pages/AccountSettingsPage.tsx(148,43): error TS2339: Property 'createdAt' does not exist on type 'UserProfile'.
+src/features/settings/pages/AccountSettingsPage.tsx(154,17): error TS2322: Type '{ children: Element; title: string; description: string; icon: Element; }' is not assignable to type 'IntrinsicAttributes & SettingsRowProps'.
+  Property 'icon' does not exist on type 'IntrinsicAttributes & SettingsRowProps'.
+src/features/settings/pages/AccountSettingsPage.tsx(157,43): error TS2339: Property 'lastLoginAt' does not exist on type 'UserProfile'.
+src/features/settings/pages/AccountSettingsPage.tsx(157,70): error TS2339: Property 'createdAt' does not exist on type 'UserProfile'.
+src/features/settings/pages/AccountSettingsPage.tsx(172,17): error TS2353: Object literal may only specify known properties, and 'danger' does not exist in type 'DangerAction'.
+src/features/settings/pages/AccountSettingsPage.tsx(179,17): error TS2353: Object literal may only specify known properties, and 'danger' does not exist in type 'DangerAction'.
+src/features/settings/pages/AdvancedSettingsPage.tsx(67,19): error TS2322: Type '{ checked: boolean; onCheckedChange: () => void; }' is not assignable to type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+  Property 'onCheckedChange' does not exist on type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+src/features/settings/pages/AdvancedSettingsPage.tsx(76,19): error TS2322: Type '{ checked: boolean; onCheckedChange: () => void; }' is not assignable to type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+  Property 'onCheckedChange' does not exist on type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+src/features/settings/pages/AdvancedSettingsPage.tsx(85,19): error TS2322: Type '{ checked: boolean; onCheckedChange: () => void; }' is not assignable to type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+  Property 'onCheckedChange' does not exist on type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+src/features/settings/pages/AdvancedSettingsPage.tsx(94,19): error TS2322: Type '{ checked: boolean; onCheckedChange: () => void; }' is not assignable to type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+  Property 'onCheckedChange' does not exist on type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+src/features/settings/pages/AdvancedSettingsPage.tsx(103,19): error TS2322: Type '{ checked: boolean; onCheckedChange: () => void; }' is not assignable to type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+  Property 'onCheckedChange' does not exist on type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+src/features/settings/pages/AdvancedSettingsPage.tsx(117,15): error TS2353: Object literal may only specify known properties, and 'danger' does not exist in type 'DangerAction'.
+src/features/settings/pages/AdvancedSettingsPage.tsx(125,15): error TS2353: Object literal may only specify known properties, and 'danger' does not exist in type 'DangerAction'.
+src/features/settings/pages/AppearanceSettingsPage.tsx(20,8): error TS2739: Type '{}' is missing the following properties from type 'AppearanceSettingsProps': preferences, onSave
+src/features/settings/pages/BillingSettingsPage.tsx(71,15): error TS2353: Object literal may only specify known properties, and 'danger' does not exist in type 'DangerAction'.
+src/features/settings/pages/DataPrivacySettingsPage.tsx(67,19): error TS2322: Type '{ checked: boolean; onCheckedChange: () => void; }' is not assignable to type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+  Property 'onCheckedChange' does not exist on type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+src/features/settings/pages/DataPrivacySettingsPage.tsx(76,19): error TS2322: Type '{ checked: boolean; onCheckedChange: () => void; }' is not assignable to type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+  Property 'onCheckedChange' does not exist on type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+src/features/settings/pages/DataPrivacySettingsPage.tsx(85,19): error TS2322: Type '{ checked: boolean; onCheckedChange: () => void; }' is not assignable to type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+  Property 'onCheckedChange' does not exist on type 'IntrinsicAttributes & SwitchProps & RefAttributes<HTMLInputElement>'.
+src/features/settings/pages/DataPrivacySettingsPage.tsx(135,15): error TS2353: Object literal may only specify known properties, and 'danger' does not exist in type 'DangerAction'.
+src/features/settings/pages/NotificationSettingsPage.tsx(17,8): error TS2739: Type '{}' is missing the following properties from type 'NotificationPreferencesProps': preferences, onSave
+src/features/settings/pages/SecuritySettingsPage.tsx(42,43): error TS2322: Type 'Promise<string>' is not assignable to type 'void | Promise<void>'.
+  Type 'Promise<string>' is not assignable to type 'Promise<void>'.
+    Type 'string' is not assignable to type 'void'.
+src/mocks/activities.mock.ts(5,3): error TS2739: Type '{ id: string; type: "opportunity_won"; actorName: string; description: string; occurredAt: string; }' is missing the following properties from type 'Activity': module, actorId
+src/mocks/activities.mock.ts(13,3): error TS2739: Type '{ id: string; type: "lead_created"; actorName: string; description: string; occurredAt: string; }' is missing the following properties from type 'Activity': module, actorId
+src/mocks/activities.mock.ts(20,3): error TS2739: Type '{ id: string; type: "meeting_completed"; actorName: string; description: string; occurredAt: string; }' is missing the following properties from type 'Activity': module, actorId
+src/mocks/activities.mock.ts(27,3): error TS2739: Type '{ id: string; type: "contact_updated"; actorName: string; description: string; occurredAt: string; }' is missing the following properties from type 'Activity': module, actorId
+src/mocks/activities.mock.ts(34,3): error TS2739: Type '{ id: string; type: "lead_created"; actorName: string; description: string; occurredAt: string; }' is missing the following properties from type 'Activity': module, actorId
+src/mocks/activities.mock.ts(41,3): error TS2739: Type '{ id: string; type: "opportunity_won"; actorName: string; description: string; occurredAt: string; }' is missing the following properties from type 'Activity': module, actorId

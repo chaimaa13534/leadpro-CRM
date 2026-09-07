@@ -1,0 +1,1 @@
+import { useQuery } from '@tanstack/react-query';import { getReportOverview } from '../services/report-api.service';export const useReportOverview=(from:string,to:string)=>useQuery({queryKey:['reports','overview',{from,to}],queryFn:()=>getReportOverview(from,to),staleTime:60000});

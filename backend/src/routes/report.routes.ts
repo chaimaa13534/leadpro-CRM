@@ -1,0 +1,1 @@
+import { Router } from 'express';import { requireAuth } from '../middlewares/auth.middleware.js';import { requirePermission } from '../middlewares/permission.middleware.js';import { overview } from '../controllers/report.controller.js';const router=Router();router.use(requireAuth);router.get('/overview',requirePermission({read:true}),overview);export default router;

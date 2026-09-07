@@ -1,0 +1,5 @@
+export type ManagedTaskStatus = 'pending' | 'in_progress' | 'completed' | 'cancelled'; export type ManagedTaskPriority = 'low' | 'medium' | 'high';
+export interface ManagedTask { id:number; title:string; description:string|null; assignee:{id:number;firstName:string;lastName:string;email:string;avatar:string|null}; company:{id:number;name:string}|null; contact:{id:number;firstName:string;lastName:string}|null; lead:{id:number}|null; dueDate:string|null; priority:ManagedTaskPriority; status:ManagedTaskStatus; createdAt:string; updatedAt:string; }
+export interface ManagedTasksPage { items:ManagedTask[];total:number;page:number;limit:number;totalPages:number }
+export interface ManagedTasksQuery { page:number;limit:number;search?:string;status?:ManagedTaskStatus;priority?:ManagedTaskPriority;assignee?:number;due_date?:string;sort?:'title'|'due_date'|'priority'|'status'|'created_at'|'updated_at';order?:'asc'|'desc' }
+export interface TaskInput { title:string; description?:string|null;assignedTo:number;relatedCompany?:number|null;relatedContact?:number|null;relatedLead?:number|null;dueDate?:string|null;priority?:ManagedTaskPriority;status?:ManagedTaskStatus }

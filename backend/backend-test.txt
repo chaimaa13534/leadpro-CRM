@@ -1,0 +1,34 @@
+
+> leadpro-crm-backend@1.0.0 test
+> node --import tsx --test src/**/*.test.ts
+
+✔ normalizeEmail trims whitespace and lowercases the email (2.4245ms)
+✔ toPublicCompany maps all fields correctly (21.198ms)
+✔ toPublicCompany maps the owner to a nested object (7.7236ms)
+✔ toPublicCompany never exposes the raw owner_id (0.6696ms)
+✔ toPublicCompany handles null optional fields (0.6252ms)
+✔ toPublicContact maps all fields correctly (21.0215ms)
+✔ toPublicContact maps the company to a nested object (8.6515ms)
+✔ toPublicContact maps the owner to a nested object (0.5453ms)
+✔ toPublicContact never exposes internal ids or joined columns (1.3439ms)
+✔ toPublicContact handles null optional fields (0.4957ms)
+✔ toPublicLead maps all core fields correctly (7.4452ms)
+✔ toPublicLead maps company to a nested object (3.8152ms)
+✔ toPublicLead maps contact to a nested object (2.8734ms)
+✔ toPublicLead maps owner to a nested object (0.4918ms)
+✔ toPublicLead maps source to a nested object (0.6758ms)
+✔ toPublicLead never exposes internal ids or joined columns (0.8345ms)
+✔ toPublicLead handles null relations (0.8678ms)
+✔ toPublicLead handles null optional fields (0.4732ms)
+✔ toPublicUser maps all fields correctly (2.5102ms)
+✔ toPublicUser never exposes the password hash (0.5273ms)
+✔ toPublicUser maps inactive users to isActive = false (0.4026ms)
+✔ toPublicUser handles null phone and avatar (1.9783ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13520.7697

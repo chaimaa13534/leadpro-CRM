@@ -1,0 +1,3 @@
+import { z } from 'zod';
+export const opportunityFormSchema = z.object({ companyId: z.string().min(1, 'L’entreprise est requise'), contactId: z.string(), ownerId: z.string().min(1, 'Le responsable est requis'), pipelineId: z.string().min(1, 'Le pipeline est requis'), stageId: z.string().min(1, 'L’étape est requise'), probability: z.string().refine((value) => value === '' || (Number(value) >= 0 && Number(value) <= 100), 'Entre 0 et 100'), value: z.string().refine((value) => value === '' || Number(value) >= 0, 'La valeur doit être positive'), expectedCloseDate: z.string(), status: z.enum(['open', 'won', 'lost']) });
+export type OpportunityFormValues = z.infer<typeof opportunityFormSchema>;

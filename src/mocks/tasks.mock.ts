@@ -1,0 +1,67 @@
+import type { Task } from '@/types/task.types';
+import { todayAt } from '@/mocks/mock-date-helpers';
+
+const NOW_ISO = new Date().toISOString();
+
+export const tasksMock: Task[] = [
+  {
+    id: 'task-1',
+    title: 'Relancer "Atlas Textile" après la proposition',
+    status: 'todo',
+    priority: 'high',
+    dueDate: todayAt(9, 30),
+    assigneeId: 'user-1',
+    relatedEntity: 'opportunity',
+    relatedEntityId: 'opportunity-14',
+    createdAt: NOW_ISO,
+    updatedAt: NOW_ISO,
+  },
+  {
+    id: 'task-2',
+    title: 'Préparer la démo pour "Nour Cosmétiques"',
+    status: 'in_progress',
+    priority: 'high',
+    dueDate: todayAt(11, 0),
+    assigneeId: 'user-1',
+    relatedEntity: 'lead',
+    relatedEntityId: 'lead-27',
+    createdAt: NOW_ISO,
+    updatedAt: NOW_ISO,
+  },
+  {
+    id: 'task-3',
+    title: 'Envoyer le contrat à "Groupe Kawtar"',
+    status: 'todo',
+    priority: 'medium',
+    dueDate: todayAt(14, 0),
+    assigneeId: 'user-2',
+    relatedEntity: 'company',
+    relatedEntityId: 'company-9',
+    createdAt: NOW_ISO,
+    updatedAt: NOW_ISO,
+  },
+  {
+    id: 'task-4',
+    title: 'Mettre à jour la fiche de "Sanad Pharma"',
+    status: 'done',
+    priority: 'low',
+    dueDate: todayAt(8, 0),
+    assigneeId: 'user-2',
+    relatedEntity: 'company',
+    relatedEntityId: 'company-4',
+    createdAt: NOW_ISO,
+    updatedAt: NOW_ISO,
+  },
+  {
+    id: 'task-5',
+    title: 'Appeler "Atlas Logistique" pour qualifier le besoin',
+    status: 'todo',
+    priority: 'medium',
+    dueDate: todayAt(16, 30),
+    assigneeId: 'user-1',
+    relatedEntity: 'lead',
+    relatedEntityId: 'lead-31',
+    createdAt: NOW_ISO,
+    updatedAt: NOW_ISO,
+  },
+] as Task[];
